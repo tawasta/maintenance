@@ -10,27 +10,15 @@
                 <field name="owner_id" />
 		    </xpath>
 
-            <xpath
-        expr="//group//group//field[@name='maintenance_team_id']"
-        position="attributes"
-      >
+            <xpath expr="//group//group//field[@name='maintenance_team_id']" position="attributes">
                 <attribute name="invisible">1</attribute>
 		    </xpath>
 
-            <xpath
-        expr="//group//group//field[@name='maintenance_team_id']"
-        position="before"
-      >
-                <field
-          name="partner_id"
-          context="{'res_partner_search_mode': 'supplier'}"
-        />
+            <xpath expr="//group//group//field[@name='maintenance_team_id']" position="before">
+                <field name="partner_id" context="{'res_partner_search_mode': 'supplier'}" />
 		    </xpath>
 
-            <xpath
-        expr="//group//group//field[@name='technician_user_id']"
-        position="attributes"
-      >
+            <xpath expr="//group//group//field[@name='technician_user_id']" position="attributes">
                 <attribute name="invisible">1</attribute>
 		    </xpath>
 
@@ -38,25 +26,16 @@
                 <attribute name="invisible">1</attribute>
 		    </xpath>
 
-            <xpath
-        expr="//group//group//field[@name='technician_user_id']"
-        position="before"
-      >
+            <xpath expr="//group//group//field[@name='technician_user_id']" position="before">
                 <field name="location" string="Used in location" />
                 <field name="serial_no" />
 		    </xpath>
 
-            <xpath
-        expr="//group//group//field[@name='assign_date']"
-        position="attributes"
-      >
+            <xpath expr="//group//group//field[@name='assign_date']" position="attributes">
                 <attribute name="invisible">1</attribute>
 		    </xpath>
 
-            <xpath
-        expr="//group//group//field[@name='scrap_date']"
-        position="attributes"
-      >
+            <xpath expr="//group//group//field[@name='scrap_date']" position="attributes">
                 <attribute name="invisible">1</attribute>
 		    </xpath>
 		</field>
