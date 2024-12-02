@@ -2,35 +2,27 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-============================================
-Modifies Equipment form view and adds fields
-============================================
+===================================================
+Equipment view – Documents and History on form view
+===================================================
 
-This module adds two fields:
-* Description
-* Owner
+Adds a field to set documents to equipments. Description page is renamed as History.
 
-Fields on equipment form view is rearranged differently. Some fields are
-hidden from all users.
+Select is an equipment has been ordered or delivered. Equipment is shown as red if
+it is set as ordered.
 
 Configuration
 =============
-Only installing this module is needed. Adding fields and form view changes
-are done automically. User needs access rights for maintenance module to
-see the changes.
+Install this module and set information to created fields
 
 Usage
 =====
-A user adds information to the created fields.
+Go to Equipment form view to see changes in tabs and fields.
 
 Known issues / Roadmap
 ======================
 Consider checking that if an other module tries to make changes to the same form view
 that no conflicts occur because of this module.
-
-The form view is changed with specific xpaths to avoid issues with other modules.
-Also replaces has not been used so other modules will not throw an error because
-of missing fields on form view.
 
 Credits
 =======
