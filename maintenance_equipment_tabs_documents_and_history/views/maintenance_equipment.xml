@@ -33,13 +33,7 @@
                                 <field name="description" />
                                 <field name="document_id" widget="many2many_binary" />
                                 <field name="equipment_id" column_invisible="1" />
-                                <button
-                  name="action_unlink"
-                  string="Delete"
-                  type="object"
-                  icon="fa-trash"
-                  confirm="This operation is irreversible. Do you wish to proceed to the record deletion?"
-                />
+                                <button name="action_unlink" string="Delete" type="object" icon="fa-trash" confirm="This operation is irreversible. Do you wish to proceed to the record deletion?" />
                             </tree>
 
                             <form name="document_form">
@@ -61,13 +55,7 @@
                             <field name="description" />
                             <field name="document_id" widget="many2many_binary" />
                             <field name="equipment_id" column_invisible="1" />
-                            <button
-                name="action_unlink"
-                string="Delete"
-                type="object"
-                icon="fa-trash"
-                confirm="This operation is irreversible. Do you wish to proceed to the record deletion?"
-              />
+                            <button name="action_unlink" string="Delete" type="object" icon="fa-trash" confirm="This operation is irreversible. Do you wish to proceed to the record deletion?" />
                         </tree>
 
                         <form name="document_document_form">
@@ -90,18 +78,8 @@
                             <field name="equipment_id" />
                             <templates>
                                 <t t-name="kanban-menu">
-                                    <a
-                    t-attf-href="/web/content/ir.attachment/#{record.document_id.raw_value}/datas?download=true"
-                    download=""
-                    class="dropdown-item"
-                  >Download</a>
-                                    <button
-                    name="action_unlink"
-                    string="Delete"
-                    type="object"
-                    icon="fa-trash"
-                    confirm="This operation is irreversible. Do you wish to proceed to the record deletion?"
-                  />
+                                    <a t-attf-href="/web/content/ir.attachment/#{record.document_id.raw_value}/datas?download=true" download="" class="dropdown-item">Download</a>
+                                    <button name="action_unlink" string="Delete" type="object" icon="fa-trash" confirm="This operation is irreversible. Do you wish to proceed to the record deletion?" />
                                 </t>
 
 
@@ -109,13 +87,7 @@
                                     <div class="oe_kanban_global_area oe_kanban_global_click o_kanban_attachment">
                                         <div class="o_kanban_image">
                                             <div class="o_kanban_image_wrapper">
-                                                <img
-                          t-attf-src="/web/image/#{record.document_id.raw_value}"
-                          width="100"
-                          height="100"
-                          alt="Document"
-                          class="o_attachment_image"
-                        />
+                                                <img t-attf-src="/web/image/#{record.document_id.raw_value}" width="100" height="100" alt="Document" class="o_attachment_image" />
                                             </div>
                                         </div>
 
@@ -154,13 +126,7 @@
                             <field name="description" />
                             <field name="document_id" widget="many2many_binary" />
                             <field name="equipment_id" column_invisible="1" />
-                            <button
-                name="action_unlink"
-                string="Delete"
-                type="object"
-                icon="fa-trash"
-                confirm="This operation is irreversible. Do you wish to proceed to the record deletion?"
-              />
+                            <button name="action_unlink" string="Delete" type="object" icon="fa-trash" confirm="This operation is irreversible. Do you wish to proceed to the record deletion?" />
                         </tree>
 
                         <form name="warranty_document_form">
@@ -181,13 +147,7 @@
                             <field name="description" />
                             <field name="document_id" widget="many2many_binary" />
                             <field name="equipment_id" column_invisible="1" />
-                            <button
-                name="action_unlink"
-                string="Delete"
-                type="object"
-                icon="fa-trash"
-                confirm="This operation is irreversible. Do you wish to proceed to the record deletion?"
-              />
+                            <button name="action_unlink" string="Delete" type="object" icon="fa-trash" confirm="This operation is irreversible. Do you wish to proceed to the record deletion?" />
                         </tree>
 
                         <form name="other_document_form">
