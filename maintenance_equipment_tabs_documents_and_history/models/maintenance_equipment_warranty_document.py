@@ -1,9 +1,9 @@
 from odoo import fields, models
 
 
-class MaintenanceEquipmentDocumentDocument(models.Model):
-    _name = "maintenance.equipment.document.document"
-    _description = "Maintenance Equipment Document document"
+class MaintenanceEquipmentWarrantyDocument(models.Model):
+    _name = "maintenance.equipment.warranty.document"
+    _description = "Maintenance Equipment Warranty document"
 
     description = fields.Char(string="Description", copy=False)
     document_id = fields.Many2many(

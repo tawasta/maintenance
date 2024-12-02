@@ -19,20 +19,20 @@
 ##############################################################################
 
 {
-    'name': 'Equipment view – Documents and History on form view',
-    'summary': 'Shows Documents and History in the maintenance equipment form view',
-    'version': '17.0.1.0.0',
-    'category': 'Maintenance',
-    'website': 'https://tawasta.fi',
-    'author': 'Tawasta',
-    'license': 'AGPL-3',
-    'application': False,
-    'installable': True,
-    'depends': [
-        'maintenance',
+    "name": "Equipment view – Documents and History on form view",
+    "summary": "Shows Documents and History in the maintenance equipment form view",
+    "version": "17.0.1.0.0",
+    "category": "Maintenance",
+    "website": "https://github.com/tawasta/odoo/maintenance",
+    "author": "Tawasta",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "depends": [
+        "maintenance",
     ],
-    'data': [
+    "data": [
         "security/ir.model.access.csv",
-        'views/maintenance_equipment.xml',
+        "views/maintenance_equipment.xml",
     ],
 }
