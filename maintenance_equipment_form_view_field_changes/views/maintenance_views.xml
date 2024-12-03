@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="hr_equipment_view_form" model="ir.ui.view">
+        <field name="name">maintenance.equipment.form.view.changes</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group//group//field[@name='category_id']" position="before">
+                <field name="description" />
+                <field name="owner_id" options="{'no_create': True}" />
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='owner_user_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='maintenance_team_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='maintenance_team_id']" position="before">
+                <field name="partner_id" context="{'res_partner_search_mode': 'supplier'}" options="{'no_create': True}" />
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='technician_user_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='location']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='technician_user_id']" position="before">
+                <field name="location" string="Used in location" />
+                <field name="serial_no" />
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='assign_date']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='scrap_date']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='scrap_date']" position="after">
+                <field name="engine" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
