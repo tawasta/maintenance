@@ -19,9 +19,9 @@
 ##############################################################################
 
 {
-    "name": "Maintenance Equipment - Form view field changes",
-    "summary": "Modified field arrangements and names on Maintenance Equipment form view",
-    "version": "17.0.1.0.1",
+    "name": "Equipment tree view customizations",
+    "summary": "Switch the order of fields in the equipment tree view",
+    "version": "17.0.1.0.0",
     "category": "Maintenance",
     "website": "https://github.com/tawasta/odoo/maintenance",
     "author": "Tawasta",
@@ -30,8 +30,10 @@
     "installable": True,
     "depends": [
         "maintenance",
+        "maintenance_equipment_form_view_field_changes",
+        "maintenance_equipment_tabs_documents_and_history",
     ],
     "data": [
-        "views/maintenance_views.xml",
+        "views/maintenance_equipment.xml",
     ],
 }

@@ -50,6 +50,12 @@
                 </page>
 
                 <page string="Documentation" name="order">
+                    <group>
+                        <group name="main_document">
+                            <field name="main_document_id" widget="selection" />
+                        </group>
+                    </group>
+
                     <field name="document_document_ids">
                         <tree name="document_document_tree" editable="bottom" limit="40" delete="0">
                             <field name="description" />

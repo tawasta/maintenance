@@ -1,0 +1,246 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* maintenance_equipment_tabs_documents_and_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20240126\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-03 08:32+0000\n"
+"PO-Revision-Date: 2024-12-03 10:40+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__create_uid
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_order_document__create_uid
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_other_document__create_uid
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_picture_document__create_uid
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_warranty_document__create_uid
+msgid "Created by"
+msgstr "Luonut"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__create_date
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_order_document__create_date
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_other_document__create_date
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_picture_document__create_date
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_warranty_document__create_date
+msgid "Created on"
+msgstr "Luotu"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.hr_equipment_view_form
+msgid "Delete"
+msgstr "Poista"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields.selection,name:maintenance_equipment_tabs_documents_and_history.selection__maintenance_equipment__order_status__delivered
+msgid "Delivered"
+msgstr "Toimitettu"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment__delivery_date
+msgid "Delivery Date"
+msgstr "Toimituspäivä"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__description
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_order_document__description
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_other_document__description
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_picture_document__description
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_warranty_document__description
+msgid "Description"
+msgstr "Kuvaus"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__display_name
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_order_document__display_name
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_other_document__display_name
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_picture_document__display_name
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_warranty_document__display_name
+msgid "Display Name"
+msgstr "Näyttönimi"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__document_id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_order_document__document_id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_other_document__document_id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_picture_document__document_id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_warranty_document__document_id
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.hr_equipment_view_form
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.maintenance_equipment_document_document_form
+msgid "Document"
+msgstr "Dokumentti"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__name
+msgid "Document Name"
+msgstr "Dokumentin nimi"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.hr_equipment_view_form
+msgid "Documentation"
+msgstr "Dokumentaatio"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment__document_document_ids
+msgid "Documents"
+msgstr "Dokumentit"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.hr_equipment_view_form
+msgid "Download"
+msgstr "Lataa"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__equipment_id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_order_document__equipment_id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_other_document__equipment_id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_picture_document__equipment_id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_warranty_document__equipment_id
+msgid "Equipment"
+msgstr "Laite"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,help:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment__order_status
+msgid "Equipment is shown as red when 'Ordered' has been selected."
+msgstr "Laite näytetään punaisena, kun 'Tilattu' on valittuna."
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.hr_equipment_view_form
+msgid "History"
+msgstr "Historia"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_order_document__id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_other_document__id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_picture_document__id
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_warranty_document__id
+msgid "ID"
+msgstr "ID"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__write_uid
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_order_document__write_uid
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_other_document__write_uid
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_picture_document__write_uid
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_warranty_document__write_uid
+msgid "Last Updated by"
+msgstr "Viimeksi päivittänyt"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__write_date
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_order_document__write_date
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_other_document__write_date
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_picture_document__write_date
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_warranty_document__write_date
+msgid "Last Updated on"
+msgstr "Viimeksi päivitetty"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment__main_document_id
+msgid "Main document"
+msgstr "Päädokumentti"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment__maintenance_alarm_date
+msgid "Maintenance Alarm"
+msgstr "Huoltohälytys"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model,name:maintenance_equipment_tabs_documents_and_history.model_maintenance_equipment
+msgid "Maintenance Equipment"
+msgstr "Huoltovälineet"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model,name:maintenance_equipment_tabs_documents_and_history.model_maintenance_equipment_document_document
+msgid "Maintenance Equipment Document document"
+msgstr ""
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model,name:maintenance_equipment_tabs_documents_and_history.model_maintenance_equipment_order_document
+msgid "Maintenance Equipment Order document"
+msgstr ""
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model,name:maintenance_equipment_tabs_documents_and_history.model_maintenance_equipment_other_document
+msgid "Maintenance Equipment Other document"
+msgstr ""
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model,name:maintenance_equipment_tabs_documents_and_history.model_maintenance_equipment_picture_document
+msgid "Maintenance Equipment Picture document"
+msgstr ""
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model,name:maintenance_equipment_tabs_documents_and_history.model_maintenance_equipment_warranty_document
+msgid "Maintenance Equipment Warranty document"
+msgstr ""
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment_document_document__document_name
+msgid "Name"
+msgstr "Nimi"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.hr_equipment_view_form
+msgid "Order"
+msgstr "Tilaus"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment__order_document_ids
+msgid "Order Documents"
+msgstr "Tilausdokumentit"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment__order_status
+msgid "Order Status"
+msgstr "Tilauksen tila"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields.selection,name:maintenance_equipment_tabs_documents_and_history.selection__maintenance_equipment__order_status__ordered
+msgid "Ordered"
+msgstr "Tilattu"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment__other_document_ids
+msgid "Other documents"
+msgstr "Muut dokumentit"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.hr_equipment_view_form
+msgid "Others"
+msgstr "Muut"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment__picture_document_ids
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.hr_equipment_view_form
+msgid "Pictures"
+msgstr "Kuvat"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.hr_equipment_view_form
+msgid ""
+"This operation is irreversible. Do you wish to proceed to the record "
+"deletion?"
+msgstr ""
+"Tämä toimenpide on peruuttamaton. Haluatko jatkaa tietueen "
+"poistamista?"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model_terms:ir.ui.view,arch_db:maintenance_equipment_tabs_documents_and_history.hr_equipment_view_form
+msgid "Warranty"
+msgstr "Takuu"
+
+#. module: maintenance_equipment_tabs_documents_and_history
+#: model:ir.model.fields,field_description:maintenance_equipment_tabs_documents_and_history.field_maintenance_equipment__warranty_document_ids
+msgid "Warranty documents"
+msgstr "Takuun dokumentit"
