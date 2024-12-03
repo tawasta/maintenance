@@ -60,7 +60,7 @@
                         <tree name="document_document_tree" editable="bottom" limit="40" delete="0">
                             <field name="description" />
                             <field name="document_id" widget="many2many_binary" />
-                            <field name="equipment_id" column_invisible="0" />
+                            <field name="equipment_id" column_invisible="1" />
                             <button name="action_unlink" string="Delete" type="object" icon="fa-trash" confirm="This operation is irreversible. Do you wish to proceed to the record deletion?" />
                         </tree>
 
