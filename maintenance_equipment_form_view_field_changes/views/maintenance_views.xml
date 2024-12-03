@@ -7,7 +7,11 @@
         <field name="arch" type="xml">
             <xpath expr="//group//group//field[@name='category_id']" position="before">
                 <field name="description" />
-                <field name="owner_id" />
+                <field name="owner_id" options="{'no_create': True}" />
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='owner_user_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
             </xpath>
 
             <xpath expr="//group//group//field[@name='maintenance_team_id']" position="attributes">
@@ -15,7 +19,7 @@
             </xpath>
 
             <xpath expr="//group//group//field[@name='maintenance_team_id']" position="before">
-                <field name="partner_id" context="{'res_partner_search_mode': 'supplier'}" />
+                <field name="partner_id" context="{'res_partner_search_mode': 'supplier'}" options="{'no_create': True}" />
             </xpath>
 
             <xpath expr="//group//group//field[@name='technician_user_id']" position="attributes">
@@ -37,6 +41,10 @@
 
             <xpath expr="//group//group//field[@name='scrap_date']" position="attributes">
                 <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//group//group//field[@name='scrap_date']" position="after">
+                <field name="engine" />
             </xpath>
         </field>
     </record>
