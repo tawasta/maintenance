@@ -21,7 +21,7 @@
 {
     "name": "Equipment tree view customizations",
     "summary": "Switch the order of fields in the equipment tree view",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "category": "Maintenance",
     "website": "https://github.com/tawasta/odoo/maintenance",
     "author": "Tawasta",
