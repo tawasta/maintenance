@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class MaintenanceEquipment(models.Model):
@@ -45,12 +45,5 @@ class MaintenanceEquipment(models.Model):
         comodel_name="maintenance.equipment.document.document",
         string="Main document",
         domain="[('id', 'in', document_document_ids)]",
-        #        domain=lambda self: self._domain_main_document_id(),
         copy=False,
     )
-
-    def _domain_main_document_id(self):
-        domain = "[('equipment_id.id', '=', {})]".format(self.id)
-        print("SELF", self)
-        print("DOMAIN", domain)
-        return domain
