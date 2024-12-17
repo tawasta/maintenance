@@ -30,8 +30,8 @@
                         </group>
                         <field name="order_document_ids">
                             <tree name="document_tree" editable="bottom" limit="40" delete="0">
-                                <field name="description" />
                                 <field name="document_id" widget="many2many_binary" />
+                                <field name="description" />
                                 <field name="equipment_id" column_invisible="1" />
                                 <button
                   name="action_unlink"
@@ -64,8 +64,8 @@
 
                     <field name="document_document_ids">
                         <tree name="document_document_tree" editable="bottom" limit="40" delete="0">
-                            <field name="description" />
                             <field name="document_id" widget="many2many_binary" />
+                            <field name="description" />
                             <field name="equipment_id" column_invisible="1" />
                             <button
                 name="action_unlink"
@@ -160,8 +160,8 @@
                 <page string="Warranty" name="order">
                     <field name="warranty_document_ids">
                         <tree name="warranty_document_tree" editable="bottom" limit="40" delete="0">
-                            <field name="description" />
                             <field name="document_id" widget="many2many_binary" />
+                            <field name="description" />
                             <field name="equipment_id" column_invisible="1" />
                             <button
                 name="action_unlink"
@@ -187,8 +187,8 @@
                 <page string="Others" name="order">
                     <field name="other_document_ids">
                         <tree name="other_document_tree" editable="bottom" limit="40" delete="0">
-                            <field name="description" />
                             <field name="document_id" widget="many2many_binary" />
+                            <field name="description" />
                             <field name="equipment_id" column_invisible="1" />
                             <button
                 name="action_unlink"
