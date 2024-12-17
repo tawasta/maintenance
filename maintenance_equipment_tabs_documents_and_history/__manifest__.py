@@ -21,7 +21,7 @@
 {
     "name": "Equipment view – Documents and History on form view",
     "summary": "Shows Documents and History in the maintenance equipment form view",
-    "version": "17.0.1.0.2",
+    "version": "17.0.1.1.2",
     "category": "Maintenance",
     "website": "https://github.com/tawasta/odoo/maintenance",
     "author": "Tawasta",
