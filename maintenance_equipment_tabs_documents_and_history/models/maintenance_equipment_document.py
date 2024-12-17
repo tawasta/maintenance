@@ -8,10 +8,8 @@ class MaintenanceEquipmentDocumentDocument(models.Model):
     _order = "id desc, name desc"
 
     name = fields.Char(string="Document Name")
-    description = fields.Char(string="Description", copy=False)
-    document_id = fields.Many2many(
-        "ir.attachment", string="Document", copy=False, required=True
-    )
+    description = fields.Char(string="Description", copy=False, required=True)
+    document_id = fields.Many2many("ir.attachment", string="Document", copy=False)
     document_name = fields.Char(related="document_id.name")
     equipment_id = fields.Many2one(
         comodel_name="maintenance.equipment", string="Equipment"
