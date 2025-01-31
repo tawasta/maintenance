@@ -29,7 +29,7 @@
                             <field name="order_status" />
                         </group>
                         <field name="order_document_ids">
-                            <tree name="document_tree" editable="bottom" limit="40" delete="0">
+                            <list name="document_tree" editable="bottom" limit="40" delete="0">
                                 <field name="document_id" widget="many2many_binary" />
                                 <field name="description" />
                                 <field name="equipment_id" column_invisible="1" />
@@ -40,7 +40,7 @@
                   icon="fa-trash"
                   confirm="This operation is irreversible. Do you wish to proceed to the record deletion?"
                 />
-                            </tree>
+                            </list>
 
                             <form name="document_form">
                                 <group>
@@ -63,7 +63,7 @@
                     </group>
 
                     <field name="document_document_ids">
-                        <tree name="document_document_tree" editable="bottom" limit="40" delete="0">
+                        <list name="document_document_tree" editable="bottom" limit="40" delete="0">
                             <field name="document_id" widget="many2many_binary" />
                             <field name="description" />
                             <field name="equipment_id" column_invisible="1" />
@@ -74,7 +74,7 @@
                 icon="fa-trash"
                 confirm="This operation is irreversible. Do you wish to proceed to the record deletion?"
               />
-                        </tree>
+                        </list>
 
                         <form name="document_document_form">
                             <group>
@@ -159,7 +159,7 @@
 
                 <page string="Warranty" name="order">
                     <field name="warranty_document_ids">
-                        <tree name="warranty_document_tree" editable="bottom" limit="40" delete="0">
+                        <list name="warranty_document_tree" editable="bottom" limit="40" delete="0">
                             <field name="document_id" widget="many2many_binary" />
                             <field name="description" />
                             <field name="equipment_id" column_invisible="1" />
@@ -170,7 +170,7 @@
                 icon="fa-trash"
                 confirm="This operation is irreversible. Do you wish to proceed to the record deletion?"
               />
-                        </tree>
+                        </list>
 
                         <form name="warranty_document_form">
                             <group>
@@ -186,7 +186,7 @@
 
                 <page string="Others" name="order">
                     <field name="other_document_ids">
-                        <tree name="other_document_tree" editable="bottom" limit="40" delete="0">
+                        <list name="other_document_tree" editable="bottom" limit="40" delete="0">
                             <field name="document_id" widget="many2many_binary" />
                             <field name="description" />
                             <field name="equipment_id" column_invisible="1" />
@@ -197,7 +197,7 @@
                 icon="fa-trash"
                 confirm="This operation is irreversible. Do you wish to proceed to the record deletion?"
               />
-                        </tree>
+                        </list>
 
                         <form name="other_document_form">
                             <group>
@@ -223,9 +223,9 @@
                 <field name="order_status" column_invisible="1" />
             </field>
 
-            <tree position="attributes">
+            <list position="attributes">
                 <attribute name="decoration-danger">order_status != 'delivered'</attribute>
-            </tree>
+            </list>
         </field>
     </record>
 </odoo>

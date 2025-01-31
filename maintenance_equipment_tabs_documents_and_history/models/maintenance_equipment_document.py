@@ -10,10 +10,16 @@ class MaintenanceEquipmentDocumentDocument(models.Model):
     name = fields.Char(string="Document Name")
     description = fields.Char(string="Description", copy=False, required=True)
     document_id = fields.Many2many("ir.attachment", string="Document", copy=False)
-    document_name = fields.Char(related="document_id.name")
+    document_name = fields.Char(string="Name",
+        compute="_compute_document_name",
+    )
     equipment_id = fields.Many2one(
         comodel_name="maintenance.equipment", string="Equipment"
     )
+
+    def _compute_document_name(self):
+        for doc in self:
+            doc.document_name = doc.document_id.name
 
     def action_unlink(self):
         self.ensure_one()
