@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class MaintenanceEquipment(models.Model):
@@ -47,3 +47,28 @@ class MaintenanceEquipment(models.Model):
         domain="[('id', 'in', document_document_ids)]",
         copy=False,
     )
+    main_document_attach_id = fields.Many2one(
+        "ir.attachment",
+        compute="_compute_main_document_attach_id",
+        store=True,
+        copy=False,
+    )
+
+    @api.depends("main_document_id", "main_document_attach_id")
+    def _compute_main_document_attach_id(self):
+        for equip in self:
+            if equip.main_document_id:
+                equip.main_document_attach_id = equip.main_document_id.document_id
+            else:
+                equip.main_document_attach_id = False
+
+    def download_file(self):
+        for equip in self:
+            if equip.main_document_attach_id:
+                return {
+                    "type": "ir.actions.act_url",
+                    "url": "/web/content/{}?download=true".format(
+                        equip.main_document_attach_id.id
+                    ),
+                    "target": "self",
+                }
