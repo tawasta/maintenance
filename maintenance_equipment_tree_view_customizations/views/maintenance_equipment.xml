@@ -46,6 +46,14 @@
 
             <field name="serial_no" position="before">
                 <field name="main_document_id" />
+                <field name="main_document_attach_id" invisible="True" />
+                <button
+          name="download_file"
+          string="Download"
+          type="object"
+          class="oe_highlight"
+          invisible="not main_document_attach_id"
+        />
 		    </field>
 		</field>
 	</record>
