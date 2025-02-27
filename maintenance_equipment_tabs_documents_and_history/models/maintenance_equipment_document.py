@@ -10,7 +10,8 @@ class MaintenanceEquipmentDocumentDocument(models.Model):
     name = fields.Char(string="Document Name")
     description = fields.Char(string="Description", copy=False, required=True)
     document_id = fields.Many2many("ir.attachment", string="Document", copy=False)
-    document_name = fields.Char(string="Name",
+    document_name = fields.Char(
+        string="Name",
         compute="_compute_document_name",
     )
     equipment_id = fields.Many2one(
