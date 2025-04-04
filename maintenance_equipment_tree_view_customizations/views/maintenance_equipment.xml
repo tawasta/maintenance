@@ -46,7 +46,6 @@
 
             <field name="serial_no" position="before">
                 <field name="main_document_id" />
-                <field name="main_document_attach_id" invisible="True" />
                 <button
           name="download_file"
           string="Download"
@@ -54,6 +53,31 @@
           class="oe_highlight"
           invisible="not main_document_attach_id"
         />
+                <field name="main_document_attach_id" column_invisible="True" />
+		    </field>
+		</field>
+	</record>
+
+    <record id="hr_equipment_view_search" model="ir.ui.view">
+		<field name="name">maintenance.equipment.search.customizations</field>
+		<field name="model">maintenance.equipment</field>
+		<field name="inherit_id" ref="maintenance.hr_equipment_view_search" />
+		<field name="arch" type="xml">
+            <field name="category_id" position="attributes">
+                <attribute name="invisible">True</attribute>
+		    </field>
+
+            <field name="category_id" position="before">
+                <field string="Description" name="description" />
+		    </field>
+
+            <field name="owner_user_id" position="after">
+                <field name="location" />
+                <field name="main_document_id" />
+                <field name="category_id" />
+                <field name="serial_no" />
+                <field name="partner_id" />
+                <field name="engine" />
 		    </field>
 		</field>
 	</record>
