@@ -72,12 +72,17 @@
 		    </field>
 
             <field name="owner_user_id" position="after">
+                <field name="owner_id" />
                 <field name="location" />
                 <field name="main_document_id" />
                 <field name="category_id" />
                 <field name="serial_no" />
                 <field name="partner_id" />
                 <field name="engine" />
+		    </field>
+
+            <field name="owner_user_id" position="attributes">
+                <attribute name="invisible">True</attribute>
 		    </field>
 		</field>
 	</record>
